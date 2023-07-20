@@ -45,22 +45,6 @@ body {
     gap: 20px;
     /* cursor: pointer; */
 }
-/* 
-.Followa {
-    margin-right: 15px;
-    border-radius: 8px;
-    background: rgba(11, 2, 35, 0.10);
-    padding: 15px 20px;
-} */
-
-/* .img-btn {
-    width: 20px;
-    margin-top: 5px;
-} */
-
-/* header section style started */
-
-
 .heading {
     color: #0B0223;
     font-size: 48px;
@@ -80,15 +64,6 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
-/* .header-info ul li {
-    list-style: none;
-    color: #534C64;
-    font-size: 20px;
-    font-weight: 500;
-    margin-left: -39px;
-    margin-bottom: 5px;
-} */
 
 .btn-signin {
     border-radius: 48px;
@@ -118,12 +93,12 @@ body {
     justify-content: space-between;
     margin: 0 auto;
     gap: 35px;
-    max-width: 1000px;
-    padding-top: 20px;
+    max-width: 900px;
+    padding-top: 10px;
 }
 
 .header-img {
-    width: 90%;
+    width: 100%;
 }
 
 .play-game {
@@ -137,16 +112,13 @@ body {
     font-size: 48px;
     font-weight: 700;
     margin-bottom: 0;
-
 }
 
-.play-game p,
-.instantly-desc {
+.play-game p, .instantly-desc{
     color: #534C64;
     text-align: center;
     font-size: 18px;
     font-weight: 400;
-
 }
 
 .card-info {
@@ -190,14 +162,13 @@ body {
     font-style: normal;
     font-weight: 700;
     line-height: 60px;
-    /* 125% */
 }
 
 .instantly-desc {
     text-align: right;
 }
 
-.ply-instant {
+.play-instant {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -262,9 +233,9 @@ body {
 }
 
 footer {
-    margin-top: 100px;
-    padding-top: 130px;
-    padding-bottom: 130px;
+    margin-top: 10px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     background-color: #0B0223;
 }
 
@@ -291,19 +262,16 @@ footer {
     text-decoration: none;
     color: white;
     margin-right: 10px;
-
 }
 
 .footer-menu {
     text-align: center;
-
 }
 
 .social-links {
     text-align: center;
     margin-top: 30px;
     gap: 20px;
-
 }
 
 .icon-color {
@@ -337,81 +305,69 @@ footer {
 }
 
 @media screen and (max-width:576px) {
-.nav-container {
+    .nav-container {
+        flex-direction: column;
+    }
+    .nav-menu  {
+        margin-left: 25px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px ;
+        align-items: center;
+    }
+    .header-container {
     flex-direction: column;
-}
-.nav-menu  {
-    margin-left: 25px;
-    display: flex;
-    flex-direction: column;
-    gap: 15px ;
-    align-items: center;
-    
-    
-}
-.Followa {
-    margin-right: 15px;
-    border-radius: 8px;
-    background: rgba(11, 2, 35, 0.10);
-    padding: 15px 20px;
-    margin-top: 20px;
-}
-.header-container {
-   flex-direction: column;
-   flex-direction: column-reverse;
-   
-   
-}
-.header-info h2{
-    font-size: 38px;
-}
-.header-info h1{
-    font-size: 48px;
-}
-.img-card-container {
-    flex-direction: column;
-}
-.ply-instant{
-    flex-direction: column;
-    padding: 0;
-    margin: 0;
-}
-.play-instant-title {
-    text-align:center;
-    font-size: 28px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 60px;
-
-}
-.icon-site-container {
-    display: grid;
-    grid-template-columns: repeat(3, 30%);
-    margin: 0 auto;
-    max-width: 1200px
-}
-.box img{
-    width: 30px;
-}
-.box h3{
-    font-size: 12px;
-    font-weight: 400;
-}
-.box {
-    width: 30px;
-    height: 50px;
-    border-radius: 50px;
-    background: #FFF;
-    flex-shrink: 0;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-}
-.box:hover {
-    display: none;
-}
-.instant-info, .instant-img{
-    max-width: 100%;
-    padding: 15px;
-}
+    flex-direction: column-reverse;
+    }
+    .header-info h2{
+        font-size: 38px;
+    }
+    .header-info h1{
+        font-size: 48px;
+    }
+    .img-card-container {
+        flex-direction: column;
+    }
+    .play-instant{
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+    .play-instant-title {
+        text-align:center;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 60px;
+    }
+    .icon-site-container {
+        display: grid;
+        grid-template-columns: repeat(3, 30%);
+        margin: 0 auto;
+        max-width: 1200px
+    }
+    .box img{
+        width: 30px;
+    }
+    .box h3{
+        font-size: 12px;
+        font-weight: 400;
+    }
+    .box {
+        width: 30px;
+        height: 50px;
+        border-radius: 50px;
+        background: #FFF;
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+    .box:hover {
+        display: none;
+    }
+    .instant-info, .instant-img{
+        max-width: 100%;
+        padding: 15px;
+    }
 }
